@@ -20,11 +20,25 @@ namespace Magazzino_TechWare
             Il programma deve:
 
              - Utilizzare i Task per simulare il lavoro degli operatori.
-             -  Monitorare il progresso in tempo reale(stato degli ordini completati).
-             -  Al termine, visualizzare quanti ordini sono stati completati da ciascun operatore e il tempo totale impiegato per completare tutti gli ordini.
+             - Monitorare il progresso in tempo reale (stato degli ordini completati).
+             - Al termine, visualizzare quanti ordini sono stati completati da ciascun operatore e il tempo totale impiegato per completare tutti gli ordini.
             
             Luca richiede un report finale che mostri quale operatore è stato più veloce e quale ha completato il maggior numero di ordini.
             */
+
+
+        }
+
+
+        static async Task<int> Operaio(string nomeOperaio)
+        {
+            Random random = new Random();
+            int NumeroOrdini = random.Next(10, 21);
+            int TempoDiPreparazione = random.Next(200, 1001);
+
+            string NomeOperaio = nomeOperaio;
+
+            return NumeroOrdini;
         }
     }
 }
